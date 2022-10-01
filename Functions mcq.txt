@@ -1,0 +1,69 @@
+Q1 What error will following code give on compilation?
+f(int a, int b) {
+    int a;
+    a = 20;
+    return a;
+}
+Ans Redeclaration of a
+
+Q2 What will be the ouptput of following code?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int a;
+    a = f(10, 3.14);
+    cout<< a;
+    return 0;
+}
+
+float f(int aa, int bb) {
+    return ((float)aa + bb);
+}
+Ans Compilation error: Function is not declared
+
+Q3 What will be the ouptput of following code?
+int main() {
+    int a = 10;
+    void f();
+    a = f();
+    cout<< a;
+    return 0;
+}
+
+void f() {
+    cout<< "HI";
+}
+Ans Error: Not allowed assignment
+
+Q4 What will be the output of following code?
+int f(int a) {
+    a > 20 ? return(10) : return(20);
+}
+
+int main() {
+    int f(int);
+    int b;
+    b = f(20);
+    cout<< b;
+    return 0;
+}
+Ans Error: return statement cannot be used with conditional operators
+
+Q5 State True of False:
+A Function cannot be defined inside another function.
+Ans TRUE
+
+Q6 State True of False: Every Function must return a value.
+Ans False
+
+Q7 State True of False: Maximum number of arguments that a function can take is 12.
+Ans FALSE
+
+Q8 State True of False: If return type for a function is not specified, it defaults to int.
+Ans TRUE
+
+Q9 State True of False: Functions cannot return a floating point number.
+Ans FALSE
+
+Q10 State True of False: In a function two return statements should never occur.
+Ans FALSE
