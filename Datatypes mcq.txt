@@ -1,0 +1,58 @@
+Q1 Is bool a fundamental datatype in C++?
+Ans Yes
+
+Q2 Identify the user-defined types from the following?
+Ans Enumeration and classes
+
+Q3 The value 132.54 can represented using which data type?
+Ans double
+
+Q4 What is the syntax of user-defined data type?
+Ans typedef ExistingDataType NameByUser
+
+Q5 What is the output of following code?
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+ typedef int num;
+ num a = 10, b = 15;
+ num c = a + b + a - b;
+ cout << c;
+ return 0;
+}
+Ans 20
+
+Q6 Which of the following belongs to the set of character types?
+Ans both wchar_t and char
+
+Q7 What will be the output of this program?
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+ char c = 74;
+ cout << c;
+ return 0;
+}
+Ans J
+
+Q8 Identify the correct statement.
+Ans typedef does not create different types. It only creates synonyms of existing types
+
+Q9 Which data type holds whole numbers?
+Ans int
+
+Q10 Which data type holds logical values?
+Ans bool
+
+Q11 Which of the following will be the correct output for the program given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+ enum color { red, green, blue };
+ typedef enum color mycolor;
+ mycolor m = red;
+ cout<< m;
+ return 0;
+}
+Ans 0
