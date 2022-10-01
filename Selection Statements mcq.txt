@@ -1,0 +1,124 @@
+Q1 What will be the output of following program?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int i = 4;
+        switch(i) {
+            default:
+                cout<<"Hello ";
+            case 1:
+            cout<<"PrepBytes ";
+                break;
+            case 2:
+                cout<<"Code ";
+                break;
+            case 3:
+                cout<<"World ";
+        } 
+        return 0;
+}
+Ans Hello PrepBytes
+
+Q2 Which of the following is the correct output for program given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int i = 1;
+        switch(i) {
+        cout<<"Hello";
+        case 1:
+            cout<<"Hi";
+            break;
+        case 2:
+            cout<<"Bye";
+            break;    
+            }
+}
+Ans Hi
+
+Q3 What is the output of C++ Program with switch statement.?
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a=3;
+    
+    switch(a)
+    {
+        case 2: cout << "ZERO "; break;
+    case default: cout<< "RABBIT ";
+}
+}
+Ans Compiler error
+
+Q4 Which of the following is the correct output for the code given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int a = 500, b = 100, c;
+        if(!a>=400)
+             b = 300;
+        c = 200;
+        cout<<"b = "<< b <<" c = "<< c;
+}
+Ans b = 100 c = 200
+
+Q5 Which of the following is the correct output for the code given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int i = 4, j = 2;
+        switch (i) {
+        case 4 :
+            cout<<"Human";
+        case j:
+            cout<<"is Mad";
+        }
+        return 0;
+}
+Ans Compilation Error
+
+Q6 Which of the following is the correct output for given below code?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int i = 1;
+        switch(i)
+        {
+            case 1 :
+               cout<<"Radioactive cats have 18 half-lives";
+                break;
+            case 1 * 2 + 4 :
+                cout<<"Bottle for rent";
+                break;
+        }
+        return 0;
+}
+Ans Radioactive cats have 18 half-lives
+
+Q7 Which of the following is the correct output for the code given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int a = 10;
+        switch(a) {
+        }
+        cout<<"Programmers";
+        return 0;
+}
+Ans Programmers
+
+Q8 Which of the following is the correct output for the code given below?
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int x = 30, y = 40;
+        if (x == y) 
+            cout<<"x is equal to y";
+        elseif ( x > y )
+            cout<<"x is greater than y";
+        elseif ( x < y )
+            cout<<"x is less than y";
+        return 0;
+}
+Ans Error: 'elseif' is not a keyword in C

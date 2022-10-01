@@ -1,0 +1,92 @@
+Q1 What will be output of following?
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main()
+{
+char prep[] = "PrepBytes";
+cout<<&prep[2]<<" ";
+cout<<prep<<" ";
+cout<<&prep[0];
+return 0;
+}
+Ans epBytes PrepBytes PrepBytes
+
+Q2 What is a String in C++ Language.?
+Ans String is an array of Characters with null character as the last element of array.
+
+Q3 What will be output of following?
+int main()
+{
+char str1[]="PREP";
+char str2[20];
+str2= str1;
+cout<<str2;
+return 0;
+}
+Ans Compilation Error
+
+Q4 What is the output of following if input is PrepBytes?
+int main()
+{
+ char str[20];
+ cin >> str;
+ cout << str;
+return 0;
+}
+Ans PrepBytes
+
+Q5 What will be the output of following is input is PrepBytes?
+int main()
+{
+ char s[5];
+ int i;
+ for(i=0; i<10; i++)
+ cin>>s[i];
+ cout<<s;
+ return 0;
+}
+Ans Runtime Error
+
+Q6 What will be output of following?
+int main()
+{
+ char *str = "hello, code";
+ char *str1 = "hello, code";
+ if (strcmp(str, str1))
+ cout<<"equal";
+ else
+ cout<<"unequal";
+ return 0;
+}
+Ans unequal
+
+Q7 What will be the output of following?
+int main()
+{
+ char *str = "hello, prep";
+ char str1[10];
+ strncpy(str1, str, 9);
+ cout << str1 << strlen(str1);
+ return 0;
+}
+Ans hello, pr 9
+
+Q8 What will be the output of following?
+iint main()
+{
+ char *str = "hello, prep";
+ cout << strlen(str);
+ return 0;
+}
+Ans 11
+
+Q9 What will be the output of following?
+int main()
+{
+ char str[15] = "hello";
+ char *str1 = "prep";
+ strcat(str, str1);
+ cout << str <<" "<< (int)str[10];
+ return 0;
+}
+Ans helloprep 0

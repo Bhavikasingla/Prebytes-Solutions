@@ -1,0 +1,114 @@
+Q1 What will be the output of following program?
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int x = -1;
+   try 
+   {
+      if (x < 0)
+      {
+         throw x;
+      }
+      else
+      {
+         cout << x;
+      }
+   }
+   catch (int x )
+   {
+      cout << "Exception occurred: Thrown value is " << x << endl;
+   }
+   return 0;
+}
+Ans Exception occurred: Thrown value is -1
+
+Q2 What will be the output of following program?
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   try
+   {
+      throw 'a';
+   }
+   catch (int param)
+   {
+      cout << "int exception ";
+   }
+   catch (...)
+   {
+      cout << "default exception ";
+   }
+   cout << "After Exception ";
+   return 0;
+}
+Ans default exception After Exception
+
+Q3 State True or False. Irrespective of exception occurrence, catch handler will always get executed.
+Ans FALSE
+
+Q4 State True or False. In nested try blocks, there is no need to specify catch handler for inner try block. Outer catch handler is sufficient for the program.
+Ans FALSE
+
+Q5 Attempting to throw an exception that is not supported by a function call results in calling _____ library function.
+Ans unexpected()
+
+Q6 In nested try block, if inner catch handler gets executed, then _____.
+Ans Compiler will execute remaining executable statements of outer try block and then the main().
+
+Q7 An exception is thrown using _____ keyword in CPP.
+Ans throw
+
+Q8 What happens in C++ when an exception is thrown and not caught anywhere like following program?
+#include<bits/stdc++.h>
+using namespace std;
+int fun() throw (int)
+{
+   throw 10;
+}
+int main()
+{
+   fun();
+   return 0;
+}
+Ans Abnormal program termination
+
+Q9 What happens when a function throws an error but doesn't specify it in the list of exceptions it can throw. For example, what is the output of following program?
+#include<bits/stdc++.h>
+using namespace std;
+// Ideally it should have been "int fun() (int)"
+int fun()
+{
+   throw 10;
+}
+int main()
+{
+   try
+   {
+      fun();
+   }
+   catch (int )
+   {
+      cout << "Caught";
+   }
+   return 0;
+}
+Ans No compiler Error. Output is "Caught"
+
+Q10 What will be the output of following program?
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+   try
+   {
+      throw 20;
+   }
+   catch (int e)
+   {
+      cout << "An exception occurred " << e << endl;
+   }
+   return 0;
+}
+Ans An exception occurred 20

@@ -1,0 +1,107 @@
+Q1 Are expressions *ptr++ and ++*ptr same?
+Ans No
+
+Q2 Will the following program report an error on compilation?
+int main() {
+    float i = 10, *j;
+    void *k;
+    k = &i;
+    j = k;
+    cout<< *j;
+    return 0;
+}
+Ans Yes
+
+Q3 Will the following program compile?
+int main() {
+    int a = 10, *j;
+    void *k;
+    j = k = &a;
+    j++;
+    k++;
+    cout<< j << “ ”<< k;    
+    return 0;
+}
+Ans No
+
+Q4 Which of the following is correct output for the program given below, if an integer is 4 bytes long and r begins in memory at address 4000?
+   int main() {
+    int ***r, **q, *p, i = 8;
+    p = &i;
+    q = &p;
+    r = &q;
+    cout<< *p  << " " << **q << " " << ***r;
+    return 0;
+}
+Ans 8 8 8
+
+Q5 Which of the following is correct output for program?
+int main() {
+    int i, *j, k;
+    i = 3;
+    j = &i;
+   cout<< i**j*i+*j;
+}
+Ans 30
+
+Q6 How many bytes are occupied by near, far and huge pointers?
+Ans 2 4 4
+
+Q7 A pointer is
+Ans A variable that stores address of other variable
+
+Q8 What will be the output of following?
+void fun(int *p) 
+{ 
+  int q = 10; 
+  p = &q; 
+}     
+   
+int main() 
+{ 
+  int r = 20; 
+  int *p = &r; 
+  fun(p); 
+  cout<< *p;
+  return 0; 
+}
+Ans 20
+
+Q9 Which of the following statements correctly declare a function that receives a pointer to a pointer to pointer to a float and returns a pointer to a pointer to a pointer to pointer to float?
+Ans float **** fun ( float ***)
+
+Q10 Which of the following statement is correct about following program?
+        int main() {
+        int i = 10, j =20;
+        int * const ptr = &i;
+        ptr = &j;
+        return 0;
+    }
+Ans Both a & c
+
+Q11 Is there any error in the following program?
+   const char *fun();
+   int main() {
+       *fun() = 'A';
+       return 0;
+   }
+   
+   const char *fun() {
+       return "Hello";
+   }
+Ans Yes
+
+Q12 What will be output of following?
+int main() {
+    void *vp;
+    char ch = 74, *cp = "JACK";
+    int j = 65;
+    vp = &ch;
+    cout<< *(char *)vp;
+    vp = &j;
+    cout<< *(int *)vp;
+    vp=cp;
+    cout<< (char *)vp + 2;
+    return 0;
+}
+Ans J65CK

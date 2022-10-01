@@ -1,0 +1,64 @@
+Q1 Which of the following is the correct output for code given below:
+int main() {
+    int i = 2;
+    cout << ++i <<" "<< i++;
+    return 0;
+}
+Ans Output may vary from compiler to compiler
+
+Q2 Which of the following is the correct output for code given below?
+int main() {
+  int x = 4, y, z;
+  y = --x;
+  z = x--;
+  cout<< x <<" "<< y <<" "<< z;
+  return 0;
+}
+Ans 2 3 3
+
+Q3 State True or False:
+Associativity of an operator is either Left to Right or Right to Left
+Ans TRUE
+
+Q4 State True or False:
+Associativity has no role to play unless the precedence of operators is same:
+Ans TRUE
+
+Q5 Which of the following correctly shows the hierarchy of arithmetic operators ?
+Ans * / % + -
+
+Q6 Which of the following statements are correct about the code snippet given below?
+int num = 10;
+int k = num > 5 ? k = 30; ;
+Ans Compiler would report an error
+
+Q7 Which of the following is the correct output for the program given below?
+int main() {
+  int a = 100, b = 200, c;
+  c = (a == 100 || b > 200);
+  cout<<"c = "<< c;
+  return 0;
+}
+Ans c = 1
+
+Q8 Which of the following is the correct output for the program given below?
+int main() {
+  int i = 4, j = -1, k = 0, w, x, y, z;
+  w = i || j || k;
+  x = i && j && k;
+  y = i || j && k;
+  z = i && j || k;
+  cout<< w <<" "<< x <<" "<< y <<" "<< z;
+  return 0;
+}
+Ans 1 0 1 1
+
+Q9 Which of the following statements are correct about the program given below?
+int main() {
+  float a = 1.5, b = 1.55;
+  if (a = b)
+      cout<<"a and b are equal";
+  else 
+    cout<<"a and b are not equal";
+}
+Ans The output of the program would be "a and b are equal"
