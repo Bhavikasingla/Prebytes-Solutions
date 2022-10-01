@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    //write your code here
+    int t=0;
+    cin>>t;
+    while(t>0){
+      string s;
+      cin>>s;
+      int flag=0;
+      int m=s.length()-1;
+      int g=s.length();
+      int count=0;
+      for(int i=0;i<m;i++,m--){
+          if(s[i]!=s[m]){
+            if(s[i]>s[m]){
+              count=count+(s[i]-s[m]);
+            }
+            else{
+              count=count+(s[m]-s[i]);
+            }
+          }
+      }
+      cout<<count<<endl;
+      t=t-1;
+    }
+    return 0;
+  }
