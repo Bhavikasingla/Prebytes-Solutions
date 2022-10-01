@@ -1,0 +1,98 @@
+Ques For Cat and Animal class, correct way of inheritance is:
+Ans (A)class Cat: public Animal
+
+Ques Feature not available in C++ object oriented programming is:
+Ques (B)Virtual constructor
+
+Ques How many types of access specifiers are provided in OOP (C++)?
+Ans (B)3
+
+Ques If you want to write multiple functions in a class with same name, then what C++ feature will you use?
+Ans (C)Function overloading
+
+Ques If I want to have common functions in a class and want to defer implementations of some other functions to derived classes, then we need to use:
+Ans (B)An abstract class
+
+Ques Not using virtual destructor feature in a C++ object oriented programing can cause:
+Ans (A)Memory leak
+
+Ques Which of the following is not type of class?
+Ans (C)Start Class
+
+Ques What is default access specifier for data members or member functions declared within a class without any specifier, in C++ ?
+Ans (A)Private
+
+Ques Which is known as generic class?
+Ans (C)Template class
+
+Ques Size of a class is :
+Ans (D)Classes doesn’t have any size
+
+Ques What is the scope of a class nested inside another class?
+Ans (D)Depends on access specifier and inheritance used
+
+Ques Instance of which type of class can’t be created?
+Ans (D)Abstract class
+
+Ques What is size of the object of following class (64 bit system)?
+class student
+{
+   int rollno;
+   char name[20];
+   static int studentno;
+};
+Ans (C)24
+
+Ques Which feature of OOP is indicated by the following code?
+class student
+{
+   int marks;
+};
+class topper:public student
+{
+   int age;  
+   topper(int age)
+   {   
+      this.age=age;  
+   }   
+};
+Ans (D)Encapsulation and Inheritance
+
+Ques Find the output of the following program:
+#include<bits/stdc++.h>
+using namespace std;
+class education
+{
+   char name[10];
+   public:
+   void disp()
+   {
+      cout << "Its education system";
+   }
+};
+class school :public education
+{
+   public: void disp()
+   {
+      cout<<"Its school education system";
+   }
+};
+int main()
+{
+   school s;
+   s.disp();
+   return 0;
+}
+Ans (A)Its school education system
+
+Ques If data members are private, what can we do to access them from the class object?
+Ans (A)Create public member functions to access those data members
+
+Ques If two classes combine some private data members and provides public member functions to access and manipulate those data members. Where is abstraction used?
+Ans (C)Using public member functions to access and manipulate the data members
+
+Ques Which feature of OOP indicates code reusability?
+Ans (B)Inheritance
+
+Ques Which among the following doesn’t come under OOP concept?
+Ans (A)Platform independent
