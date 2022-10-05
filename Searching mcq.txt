@@ -1,0 +1,129 @@
+Ques 1 The worst case occur in linear search algorithm when …….
+
+Item is somewhere in the middle of the array
+Item is not in the array at all
+Item is the last element in the array
+Item is the last element in the array or item is not there at all
+
+Ans d
+
+Ques 2 Which of the following is not a limitation of binary search algorithm?
+
+must use a sorted array
+requirement of sorted array is expensive when a lot of insertion and deletions are needed
+there must be a mechanism to access middle element
+binary search algorithm is not efficient when the data elements more than 1500
+
+Ans d
+
+Ques 3 Which of the following is not the required condition for binary search algorithm?
+
+The list must be sorted
+There should be the direct access to the middle element in any sub list
+There must be mechanism to delete and/or insert elements in list
+None of the above
+
+Ans c
+
+Ques 4 Where is linear searching used?
+
+When the list has only a few elements
+When performing a single search in an unordered list
+Used all the time
+Both a and b
+
+Ans d
+
+Ques 5 What does the following piece of code do?
+for (int i = 0; i < arr.length-1; i++)
+{
+  for (int j = i+1; j < arr.length; j++)
+  {
+      if( (arr[i].equals(arr[j])) && (i != j) )
+      {
+          cout << arr[i];
+      }
+   }
+}
+
+Print the duplicate elements in the array
+Print the element with maximum frequency
+Print the unique elements in the array
+None of the mentioned
+
+Ans a
+
+Ques 6 Which of the following is a disadvantage of linear search?
+
+Requires more space
+Greater time complexities compared to other searching algorithms
+Not easy to understand
+All of the mentioned
+
+Ans b
+
+Ques 7 Given an array arr = {45,77,89,90,94,99,100} and key = 99; what are the mid values(corresponding array elements) in the first and second levels of recursion in Binary Search?
+
+90 and 99
+90 and 94
+89 and 99
+89 and 94
+
+Ans a
+
+Ques 8 Binary Search can be categorized into which of the following?
+
+Brute Force technique
+Divide and conquer
+Greedy algorithm
+Dynamic programming
+
+Ans b
+
+Ques 9 Given an array arr = {5,6,77,88,99} and key = 88; 
+How many Binary search iterations are done until the element is found?
+
+1
+3
+4
+2
+
+Ans d
+
+Ques 10 Which of the following is correct recurrence for worst case of Binary Search?
+
+T(n) = 2T(n/2) + O(1) and T(1) = T(0) = O(1)
+T(n) = T(n-1) + O(1) and T(1) = T(0) = O(1)
+T(n) = T(n/2) + O(1) and T(1) = T(0) = O(1)
+T(n) = T(n-2) + O(1) and T(1) = T(0) = O(1)
+
+Ans c
+
+Ques 11 Consider the following C program that attempts to locate an element x in an array Y[] using binary search. The program is erroneous.
+f(int Y[10], int x) {
+   int i, j, k;
+   i = 0; j = 9;
+   do {
+        k =  (i + j) /2;
+        if( Y[k] < x)  i = k; else j = k;
+     } while(Y[k] != x && i < j);
+         if(Y[k] == x) cout<< "x is in the array " ;
+         else cout << " x is not in the array " ;
+ }
+On which of the following contents of Y and x does the program fail?
+
+Y is [1 2 3 4 5 6 7 8 9 10] and x < 10
+Y is [1 3 5 7 9 11 13 15 17 19] and x < 1
+Y is [2 2 2 2 2 2 2 2 2 2] and x > 2
+Y is [2 4 6 8 10 12 14 16 18 20] and 2 < x < 20 and x is even
+
+Ans c
+
+Ques 12 The time taken by binary search algorithm to search a key in a sorted array of n elements is
+
+O(logn)
+O(n)
+O(nlogn)
+O(n2)
+
+Ans a
