@@ -1,0 +1,157 @@
+Ques 1 The postfix form of the expression (A+ B)*(C*D-E)*F / G is
+
+
+AB+CD*E-FG/**
+
+AB+CD*E-F**G/
+
+AB+CD*E-*F*G/
+
+AB+CDE*-*F*G/
+
+Ans c
+
+Ques 2 The data structure required to check whether an expression contains balanced parenthesis is
+
+Stack
+
+Queue
+
+Tree
+
+Array
+
+Ans a
+
+Ques 3 The postfix form of A*B+C/D is?
+
+*AB/CD+
+
+AB*CD/+
+
+A*BC+/D
+
+ABCD+/*
+
+Ans b
+
+Ques 4 Which of the following is true about linked list implementation of stack?
+
+In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.
+
+In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.
+
+Both of the above
+
+None of the above
+
+Ans d
+
+Ques 5 The prefix form of an infix expression p + q - r * t is?
+
++pq-*rt
+
+- +pqr * t
+
+- +pq * rt
+
+- + * pqrt
+
+Ans c
+
+Ques 6 The following postfix expression with single digit operands is evaluated using a stack:
+8 2 3 ^ / 2 3 * + 5 1 * -
+Note that ^ is the exponentiation operator. The top two elements of the stack after the first * is evaluated are:
+
+6, 1
+
+5, 7
+
+3, 2
+
+1, 5
+
+Ans a
+
+Ques 7 Consider the following operation performed on a stack of size 5.
+
+Push(1);
+Pop();
+Push(2);
+Push(3);
+Pop();
+Push(4);
+Pop();
+Pop();
+Push(5);
+After the completion of all operation, the no of element present on stack are
+
+1
+
+2
+
+3
+
+4
+
+Ans a
+
+Ques 8 Which of the following is not an inherent application of stack?
+
+Reversing a string
+
+Evaluation of postfix expression
+
+Implementation of recursion
+
+Job scheduling
+
+Ans d
+
+Ques 9 Which of the following operation take worst case linear time in the array implementation of stack?
+
+Push
+
+Pop
+
+IsEmpty
+
+None
+
+Ans d
+
+Ques 10 The result evaluating the postfix expression 10 5 + 60 6 / * 8 – is
+
+284
+
+213
+
+142
+
+71
+
+Ans c
+
+Ques 11 Which of the following application generally use a stack?
+
+Parenthesis balancing program
+
+Syntax analyzer in compiler
+
+Keeping track of local variables at run time
+
+All of the above
+
+Ans d
+
+Ques 12 Consider the following statements: i. First-in-first out types of computations are efficiently supported by STACKS. ii. Implementing LISTS on linked lists is more efficient than implementing LISTS on an array for almost all the basic LIST operations. iii. Implementing QUEUES on a circular array is more efficient than implementing QUEUES on a linear array with two indices. iv. Last-in-first-out type of computations are efficiently supported by QUEUES. Which of the following is correct?
+
+(ii) and (iii) are true
+
+(i) and (ii) are true
+
+(iii) and (iv) are true
+
+(ii) and (iv) are true
+
+Ans a
